@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,400&display=swap">
+  <link rel="stylesheet" href="styles/app.css">
+  <title>Quote Generator</title>
+</head>
+<body>
+  <div class="container" id="container">
+    <h1 class="title">Quote Generator</h1>
+    <div class="quote">
+      <figure class="quote__display">
+        <div class="quote__text" id="quoteText">
+
+        </div>
+        <div class="quote__author" id="quoteAuthor"></div>
+        <div class="container--button">
+          <button class="btn btn__twitter" id="twitterBtn" title="Tweet This!">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="btn btn__next" id="newQuoteBtn">New Quote</button>
+        </div>
+      </figure>
+    </div>
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

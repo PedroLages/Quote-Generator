@@ -1,0 +1,115 @@
+
+html {
+  box-sizing: border-box;
+  font: normal 62.5%/1.4 'Montserrat', sans-serif;;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #c8d6e5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  margin: 1.5rem;
+}
+
+.quote__text {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.quote__author {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.quote__display {
+  background-color: #f5f6fa;
+  border-radius: .8rem;
+  padding: 1rem 1.5rem;
+  box-shadow:0 2.5rem 5.0rem -1.2rem rgba(0, 0, 0, .25)
+}
+
+.fa-quote-left {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+.container--button {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  cursor: pointer;
+  margin: .8rem .4rem;
+  border-color: transparent;
+  border-radius: .5rem;
+  background-color: #c9dbee;
+  color: #2f3542;
+  font-size: 1.4rem;
+  justify-content: center;
+  padding-bottom: calc(.5em - 1px);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: calc(.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  outline: none;
+  box-shadow:0 .5rem .5rem -.1rem rgba(0, 0, 0, .25);
+  /* filter: brightness(110%); */
+  transition: .3s
+}
+
+.btn:hover {
+  filter: brightness(108%);
+  background-color: #c8d6e5;
+  color: #121722;
+}
+
+.btn:active {
+  box-shadow: 0 0.3rem rgba(121, 121, 121, .35);
+}
+
+.btn__twitter:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 70.0rem;
+  }
+
+  .quote__text {
+    font-size: 2.8rem;
+  }
+
+  .long-quote {
+    font-size: 2rem !important;
+  }
+
+  .quote__author {
+    font-size: 1.4rem;
+  }
+}
