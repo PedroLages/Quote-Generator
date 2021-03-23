@@ -11,12 +11,12 @@
   <title>Quote Generator</title>
 </head>
 <body>
-  <div class="container" id="container">
+  <div class="container" id="quote-containers">
     <h1 class="title">Quote Generator</h1>
     <div class="quote">
-      <figure class="quote__display">
-        <div class="quote__text" id="quoteText">
-
+      <figure class="quote__display" id="quote-container">
+        <div class="quote__text"">
+          <p id="quoteText"></p>
         </div>
         <div class="quote__author" id="quoteAuthor"></div>
         <div class="container--button">
@@ -28,6 +28,9 @@
       </figure>
     </div>
   </div>
+  <!-- Page loader animation -->
+   <div class="loader" id="loader"></div>
+
   <script src="scripts/app.js"></script>
 </body>
 </html>
