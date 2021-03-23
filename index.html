@@ -11,25 +11,24 @@
   <title>Quote Generator</title>
 </head>
 <body>
-  <div class="container" id="quote-containers">
+  <div class="container" id="js-quote-container">
     <h1 class="title">Quote Generator</h1>
     <div class="quote">
-      <figure class="quote__display" id="quote-container">
-        <div class="quote__text"">
-          <p id="quoteText"></p>
-        </div>
-        <div class="quote__author" id="quoteAuthor"></div>
+      <figure class="quote__display">
+        <p class="quote__text" id="js-quote-text"></p>
+
+        <div class="quote__author" id="js-quote-author"></div>
         <div class="container--button">
-          <button class="btn btn__twitter" id="twitterBtn" title="Tweet This!">
+          <button class="btn btn__twitter" id="js-twitter" title="Tweet This!">
             <i class="fab fa-twitter"></i>
           </button>
-          <button class="btn btn__next" id="newQuoteBtn">New Quote</button>
+          <button class="btn" id="js-new-quote">New Quote</button>
         </div>
       </figure>
     </div>
   </div>
   <!-- Page loader animation -->
-   <div class="loader" id="loader"></div>
+   <div class="loader" id="js-loader"></div>
 
   <script src="scripts/app.js"></script>
 </body>
