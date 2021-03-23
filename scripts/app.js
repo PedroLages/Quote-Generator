@@ -7,16 +7,16 @@ const loader = document.getElementById('js-loader');
 
 // Show Loading
 function loading() {
-    loader.hidden = false;
-    container.hidden = true;
+  loader.hidden = false;
+  container.hidden = true;
 }
 
 // Hide Loading
 function complete() {
-    if (!loader.hidden) {
-        container.hidden = false;
-        loader.hidden = true;
-    }
+  if (!loader.hidden) {
+    container.hidden = false;
+    loader.hidden = true;
+  }
 }
 
 // Get Quote From API
@@ -54,11 +54,11 @@ async function getQuote() {
 
 // Tweet Quote
 const tweetQuote = () => {
-    const quoteText = quote.innerText;
-    const authorText = author.innerText;
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText} - ${twitterUrl}`;
-    window.open(twitterUrl, '_blank');
-}
+  const quoteText = quote.innerText;
+  const authorText = author.innerText;
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText} - ${authorText}`;
+  window.open(twitterUrl, '_blank');
+};
 
 // Event Listeners
 newQuoteBtn.addEventListener('click', getQuote);
@@ -66,4 +66,3 @@ twitterBtn.addEventListener('click', tweetQuote);
 
 // On Load
 getQuote();
-
